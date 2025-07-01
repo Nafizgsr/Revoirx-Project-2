@@ -10,6 +10,8 @@ import Blogs from './components/Blogs-page/Blogs';
 import BlogDetails from './components/Blog-Details-page/BlogDetails';
 import ContactUs from './components/Contact-Us-page/ContactUs';
 import CaseStudies from './components/Case-Studies-page/CaseStudies';
+import Changelog from './components/Change-Log-page/Changelog';
+import Career from './components/Career-page/Career';
 import Error404Page from './components/Error-404-page/Error404Page';
 
 
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
   },{
     path:'/case-studies',
     element:<CaseStudies/>,
+    errorElement:<Error404Page/>
+  },{
+    path:'/changelog',
+    element:<Changelog/>,
+    errorElement:<Error404Page/>
+  },{
+    path:'/career',
+    element:<Career/>,
     errorElement:<Error404Page/>
   }
 ])
